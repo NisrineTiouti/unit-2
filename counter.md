@@ -23,24 +23,9 @@ void loop () {
   
   digitalWrite(pin2,LOW);
   digitalWrite(pin3,LOW);
-  digitalWrite(pin4,LOW);
-  delay(750);
-               
-  digitalWrite(pin2,LOW);
-  digitalWrite(pin3,LOW);
   digitalWrite(pin4,HIGH);
   delay(750);
   
-  digitalWrite(pin2,LOW);
-  digitalWrite(pin3,LOW);
-  digitalWrite(pin4,HIGH);
-  delay(750);
-               
-  digitalWrite(pin2,LOW);
-  digitalWrite(pin3,HIGH);
-  digitalWrite(pin4,LOW);
-  delay(750);
-               
   digitalWrite(pin2,LOW);
   digitalWrite(pin3,HIGH);
   digitalWrite(pin4,LOW);
@@ -50,32 +35,17 @@ void loop () {
   digitalWrite(pin3,HIGH);
   digitalWrite(pin4,HIGH);
   delay(750);
-               
-  digitalWrite(pin2,LOW);
-  digitalWrite(pin3,HIGH);
-  digitalWrite(pin4,HIGH);
-  delay(750);
-               
+  
   digitalWrite(pin2,HIGH);
   digitalWrite(pin3,LOW);
   digitalWrite(pin4,LOW);
   delay(750);
-               
-  digitalWrite(pin2,HIGH);
-  digitalWrite(pin3,LOW);
-  digitalWrite(pin4,LOW);
-  delay(750);
-               
+  
   digitalWrite(pin2,HIGH);
   digitalWrite(pin3,LOW);
   digitalWrite(pin4,HIGH);
   delay(750);
-               
-  digitalWrite(pin2,HIGH);
-  digitalWrite(pin3,LOW);
-  digitalWrite(pin4,HIGH);
-  delay(750); 
-               
+  
   digitalWrite(pin2,HIGH);
   digitalWrite(pin3,HIGH);
   digitalWrite(pin4,LOW);
@@ -83,18 +53,8 @@ void loop () {
   
   digitalWrite(pin2,HIGH);
   digitalWrite(pin3,HIGH);
-  digitalWrite(pin4,LOW);
-  delay(750);
-               
-  digitalWrite(pin2,HIGH);
-  digitalWrite(pin3,HIGH);
   digitalWrite(pin4,HIGH);
   delay(750);
-               
-  digitalWrite(pin2,HIGH);
-  digitalWrite(pin3,HIGH);
-  digitalWrite(pin4,HIGH);
-  
 }  
 
 #END
