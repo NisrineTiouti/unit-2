@@ -1,7 +1,8 @@
 ## Quiz 13:
 
 ![output 13](https://user-images.githubusercontent.com/89052189/143126333-eb0524a6-b3fd-4363-a511-b29344a4269c.PNG)
-Here is the test proo( I wasn't able to add it after the code)
+
+Here is the test proof( I wasn't able to add it after the code)
 ```.py
 # Given a list of food and their price calculate their overall price after taxing
 
