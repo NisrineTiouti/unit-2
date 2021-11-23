@@ -1,4 +1,4 @@
-#LED Curcuit connected to 3 buttons
+## LED Curcuit connected to 3 buttons
 
 ![Frantic Amur-Rottis (3)](https://user-images.githubusercontent.com/89052189/143099202-961b49d4-83eb-43cd-922a-d4d751382465.png)
 
