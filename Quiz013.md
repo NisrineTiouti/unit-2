@@ -43,3 +43,9 @@ print(f"Pay {total_pay}")
 
 #END 
 ```.py
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Do you want to add an item to the lists?: yes
+Where do you want to add the item, food, electronics, or liquor?: food
+Please enter the item: pudin
+Pay 5510.0
+
