@@ -1,6 +1,6 @@
 ## Seven Segments:
 
-![Seven segment](https://user-images.githubusercontent.com/89052189/143279736-f4b237da-84a7-4bb9-b860-cff5997a9e0b.png)
+![Copy of Seven segment](https://user-images.githubusercontent.com/89052189/144089422-695bb755-0ec2-4fa0-b965-96597020940c.png)
 
 ```.c
 int portA = 2;
@@ -12,7 +12,28 @@ int portF = 4;
 int portG = 8;
 
 void setup()
-{
+{ 
+  
+  Serial.begin(9600);
+  bool bit0 = true;
+  bool bit1 = true;
+  bool bit2 = true;
+  for(int z = 0; z<2; z+=1){
+    bit2 = !bit2;
+  }
+  	for(int j = 0; j<2; j+=1){
+    	bit1 = !bit1;      
+  		for(int i = 0; i<2; i+=1){
+          bit0 = !bit0;
+          Serial.print(bit2);
+          Serial.print(",");
+          Serial.print(bit1);
+          Serial.print(",");
+          Serial.print(bit2);
+    
+  	 }
+    }
+  
   pinMode(portA, OUTPUT);
   pinMode(portB, OUTPUT);
   pinMode(portC, OUTPUT);
@@ -27,8 +48,8 @@ void loop()
  // Let's define our inputs for now like this  
   bool X = false;
   bool Y = false;
-  bool Z = false; 
-  bool W = true; 
+  bool Z = true; 
+  bool W = false; 
     
   // From the slide A = notX W + YZ + YnotWnotZ + XnotWZ + WnotZnotY + notXnotYnotZ
   // not = !, and = &&, or = ||
@@ -59,3 +80,9 @@ void loop()
   // G = WY + WnotZnotX + notWZnotX + WnotZX + ZnotYX + notWnotZY
   int G = (W && Y) || (W && !Z && !X) || (!W && Z && !X) || (W && !Z && X) || (Z && !Y && X) || (!W && !Z && Y);
   digitalWrite(portG, G);
+  
+
+  
+  
+  
+}
